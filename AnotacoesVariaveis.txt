@@ -6,3 +6,20 @@ Declarando variaveis
     - let nome-da-variável = valor-qualquer
   - const, declara variável que não pode ter o seu conteúdo alterado
     - const nome-da-variável = valor-qualquer, só que este valor-qualquer, no caso do const não poderá ser modificado, pois é um valor constante e se tentar em algum ponto do programa tentar alterar, dará um erro de execução
+
+    - Nas versões mais modernas do JS, para declarar variáveis, usar let e const, e meio que abandonar o var, apesar dele funcionar também, mas está caindo em desuso.
+    - Mas é importante saber do var, porque pode-se ter acesso a programas JS escritos há muito tempo e as declarações estarem ainda com var.
+
+=========================================================
+Tipagem e não Tipagem
+=========================================================
+  - JS usada variáveis fracamente tipada.
+  - Ou seja, na sua declaração não é necessário informar se ela é string, number, boolean, etc. O conteúdo é que irá redefinir o seu tipo.
+  - Se declarar uma variável chamada testaVariavel e associar um texto a ela, ela será do tipo string enquanto o texto for o seu conteúdo.
+  - Se alterar o conteúdo desta testaVariavel para um número, o tipo dela mudará para number.
+  - Se alterar para true ou false, o tipo dela mudará para boolean.
+  - Para verificar qual o tipo da variável, usar typeof nome-da-variável e será retornado o tipo da variável naquele instante, enquanto ela tiver aquele conteúdo.
+  
+  - Existem linguagens que são fortemente tipada que na declaração da variável é preciso definir qual o tipo dela (string, number, boolean. etc) e este tipo não se altera ao longo do programa e só aceitará conteúdos do tipo que ela foi declarada, caso contrário irá ocorrer um erro.
+
+  - Uma falsa tipagem forte no JS são as variáveis declaradas com const, pois ao declarar, é obrigatório atribuir um valor, este valor permanecerá até o fim do programa, não podendo ser alterado e então o tipo da variável também será fixo.

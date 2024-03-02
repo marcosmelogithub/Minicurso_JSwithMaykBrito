@@ -1,13 +1,11 @@
-// usando var para declarar variável
-var verao = ""; // criar variável e iniciada com vazio
-verao = "quente"; // atribuir valor a var1
-alert("verão é " + verao); // exibir conteúdo de var1 com alert
+let testVariavel // apenas declarou a variável e não associou qq valor
+alert("Conteúdo da var: " + testVariavel + " tipo: " + typeof testVariavel) // a variável será do tipo undefined
 
-// usando let para declarar variável
-let inverno = ""; // criar variável e iniciada com vazio
-inverno = "frio"; // atribuir valor a var1
-alert("inverno é " + inverno); // exibir conteúdo de var1 com alert
+testVariavel = "texto" // altera o conteúdo da variável com um texto
+alert("Conteúdo da var: " + testVariavel + " tipo: " + typeof testVariavel) // agora a variável será do tipo string
 
-// usando const para declarar variável
-const primavera = "Primavera é a estação das flores";
-alert(primavera);
+testVariavel = true // altera o conteúdo da variável para true
+alert("Conteúdo da var: " + testVariavel + " tipo: " + typeof testVariavel) // agora a variável será do tipo boolean
+
+testVariavel = 45 // altera o conteúdo da variável para um número
+alert("Conteúdo da var: " + testVariavel + " tipo: " + typeof testVariavel) // agora a variável será do tipo number
