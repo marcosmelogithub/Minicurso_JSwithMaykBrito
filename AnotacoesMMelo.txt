@@ -11,6 +11,14 @@ Maneiras de executar o JS
     - ao executar o index.html, irá abrir uma janela no browser
     - se for um comando JS de console: console.log('Bem vindo ao starter'), o browser não exibirá nada, ficando em branco. Para ver a mensagem, terá que pressionar o F12 no browser e a mensagem aparecerá na console
     - se for um comando JS de alerta: alert('Bem vindo ao start'), ao executar o index.html, a mensagem aparecerá numa janela externa no browser, porém não será necessário abrir a console (F12) do browser
-    
+
+=============================================================
+Adicionando o arquivo script.js
+=============================================================    
+- Na hierarquia do VSCode, pode-se criar um arquivo .js que pode ter qualquer nome antes do .js
+ - Para efeito de aprendizado, vamos criar o arquivo scripts.js
+ - Este arquivo conterá todos os códigos JS que serão utilizados pelo index.html
+ - Para que este arquivo scripts.js possa ser utilizado pelo index.html, é preciso citá-lo através da tag script que fica, normalmente, antes da tag que encerra o body
+ - Se o código do arquivos scripts.js tiver somente o comando direto alert('Bem vindo ao starter'), por exemplo, sem qualquer outra precedência, o index.html irá executá-lo diretamente.
 
      
