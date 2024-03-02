@@ -94,3 +94,12 @@ Arrays ou vetores
  - A declaração é:
    - nome-array = [elemento1, elemento2, ...] ou
    - nome-array = [], que cria um array vazio que será preenchido dinamicamente pelo JS
+
+============================================================
+Oa tipos de dados conforme o ECMAScript, que são 9
+============================================================
+   - Primitive / Primitive value: string, number, boolean, undefined, symbol, bigint
+   - Structural: object (array, map, set, date, ...) e function
+   - Structural Primitve / Structural Root Primitive: null
+
+   - site onde estão elencados todos objetos padrões do JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
