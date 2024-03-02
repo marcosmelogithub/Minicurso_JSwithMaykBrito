@@ -1,0 +1,8 @@
+========================================================
+Declarando variaveis
+========================================================
+  - var e let, declaram variáveis cujo valores podem ser alterados
+    - var nome-da-variável = valor-qualquer
+    - let nome-da-variável = valor-qualquer
+  - const, declara variável que não pode ter o seu conteúdo alterado
+    - const nome-da-variável = valor-qualquer, só que este valor-qualquer, no caso do const não poderá ser modificado, pois é um valor constante e se tentar em algum ponto do programa tentar alterar, dará um erro de execução

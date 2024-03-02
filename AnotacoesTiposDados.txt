@@ -1,0 +1,76 @@
+ ============================================================
+ Tipo de dado: String
+ ============================================================
+  - Uma variável string contém textos ou concatenações de informações
+  - O conteúdo atribuído a uma variável string deve estar entre
+    - "" ou
+    - '' ou
+    - ´´
+  - O mais comum que se vê por aí na prática dos desenvolvedores é ''
+  - O uso de "", quando queremos que no texto usemos o apóstofe ' e/ou crase ` que o JS irá entender que são caracteres de texto e não um delimitador de conteúdo string
+  - Se quisermos usar aspas " e/ou crase ` como texto, delimitamos por ''
+  - O delimitador por crase ``, serve para
+    - comportar aspas e apóstofes como texto
+    - quebrar de linha no texto que serão reconhecidos pelo JS
+    - interpolar texto e uma operação
+      - console.log(`Bem vindo ao starter ${1 + 1}`), que resultará na exibição da mensagem: Bem vindo ao starter 2. Ou seja, interpolou um texto com uma operação matemática.
+
+============================================================
+ Tipo de dado: Numérico
+============================================================
+ - inteiro: 33
+ - real ou float: 12.5
+ - NaN: quando um conteúdo não for um número. Normalmente quando se faz uma operação com informações não-numéricas (1 + "fff"), e retornará NaN
+ - Infinity: praticamente não é utilizada, mas serve para verificar se um número é infinito. Por exemplo console.log(12.5 ==== Infinity), retornará falso
+ - tanto NaN, quanto Infinity, são palavras reservadas do JS que servirão basicamente para comparação.
+ - Por exemplo,
+   - se usarmos alert(12 === NaN), retornará falso, porque estamos comparando se 12 é uma informação NaN (não numérica)
+   - se usarmos alert(12 != NaN), retornará verdadeiro, porque estamos comparando se 12 é diferente de NaN (não numérico)
+
+============================================================
+ Tipo de dado: Boolean
+============================================================
+  - Variável que contém somente dois estados: True ou False
+
+============================================================
+Tipo de dado: undefined e null
+============================================================
+ - undefined é algo que não existe, que não está definido
+ - null indica que um objeto está vazio
+
+============================================================
+Tipo de dado: Objeto
+============================================================
+ - Estrutura que contém propriedades/atributos e funcionalidades/métodos
+ - Propriedades/Atributos são representadas com o nome da propriedade e seu atributo:
+   - {nome: "Marcos Melo"}
+ - Funcionalidades/Métodos são representadas por nome da funcionalidade e seu método (ação) que aquela funcionalidade executará quando for acionada
+   - {andar: function(){
+                        comandos JS executados qdo a funcionalidade andar for acionada
+                       }
+     }
+ - Estrutura completa de um objeto será:
+   - nome-objeto {
+      propriedade: atributo,
+      funcionalidade: function(){
+
+      }
+   }
+ - Pode-se ter várias propriedades/atributos e funcionalidades/método dento de um mesmo objeto separados por vírgula, exceto no último
+
+============================================================
+Tipo de dado: Arrays ou vetores
+============================================================
+ - Estruturas com elementos em lista
+ - A declaração é:
+   - nome-array = [elemento1, elemento2, ...] ou
+   - nome-array = [], que cria um array vazio que será preenchido dinamicamente pelo JS
+
+============================================================
+Oa tipos de dados conforme o ECMAScript, que são 9
+============================================================
+   - Primitive / Primitive value: string, number, boolean, undefined, symbol, bigint
+   - Structural: object (array, map, set, date, ...) e function
+   - Structural Primitve / Structural Root Primitive: null
+
+   - site onde estão elencados todos objetos padrões do JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
