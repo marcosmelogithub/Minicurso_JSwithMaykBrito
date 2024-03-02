@@ -21,4 +21,8 @@ Adicionando o arquivo script.js
  - Para que este arquivo scripts.js possa ser utilizado pelo index.html, é preciso citá-lo através da tag script que fica, normalmente, antes da tag que encerra o body
  - Se o código do arquivos scripts.js tiver somente o comando direto alert('Bem vindo ao starter'), por exemplo, sem qualquer outra precedência, o index.html irá executá-lo diretamente.
 
-     
+=============================================================
+Comentários em JS
+=============================================================
+ - // comenta uma linha ou um trecho após o comando
+ - /* texto do comentário */; comenta um bloco de comentários
