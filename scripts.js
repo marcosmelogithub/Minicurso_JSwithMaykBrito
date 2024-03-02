@@ -1,1 +1,1 @@
-alert('Bem vindo ao starter');
+alert(12 != NaN);
