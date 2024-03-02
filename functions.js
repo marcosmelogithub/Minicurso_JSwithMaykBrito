@@ -1,10 +1,26 @@
-// escrevendo arrow function
-// é uma outra forma de declarar uma função sem a necessidade de usar a palavra-chave function e funciona do mesmo jeito
-// um detalhe importante, é tentar sempre declarar a variável que for uma função com const para evitar que em algum ponto do JS esta variável tenha o seu conteúdo alterado e aí será perdida a função declarada para esta variável
+// callback function
+// é simplesmente quando se passa uma função como parâmetro para outra função executar em um determinado ponto da sua execução
 
-// para declarar uma arrow function, basta substituir a palavra-chave function por => e colocar este => depois dos parentêses da função
-const MinhaArrowFunction = () => {
-  console.log("Escevendo a minha função arrow function");
+// declarando uma função de forma padrão
+function FuncaoMaster(funcaoParam) {
+  console.log('antes de executar a funcão recebida como parametro');
+  funcaoParam();
+  console.log('depois que executou a função recebida como parametro');
 }
-// executando a função
-MinhaArrowFunction();
+// executando a FuncaoMaster passando uma função como parametro
+FuncaoMaster(() => {console.log('executando a função passada como parametro')});
+
+
+console.log('=======================================');
+console.log('INSTRUÇÃO: de uma forma diferente, declarar a função antes e passar como parametro');
+console.log("=======================================")
+
+
+// numa forma diferente, declara-se primeiro a função que será passda como parametro
+function FuncaoPassadaComoParametro() {
+  console.log('executando função passada como parametro, porém declarada antes');
+}
+
+// quando passar uma função como parametro que foi declarada, não usar os parenteses, passar somente o nome da função
+FuncaoMaster(FuncaoPassadaComoParametro);
+
