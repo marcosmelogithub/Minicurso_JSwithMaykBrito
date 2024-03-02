@@ -66,3 +66,25 @@ Variável undefined e null
 ============================================================
  - undefined é algo que não existe, que não está definido
  - null indica que um objeto está vazio
+
+============================================================
+Objeto
+============================================================
+ - Estrutura que contém propriedades/atributos e funcionalidades/métodos
+ - Propriedades/Atributos são representadas com o nome da propriedade e seu atributo:
+   - {nome: "Marcos Melo"}
+ - Funcionalidades/Métodos são representadas por nome da funcionalidade e seu método (ação) que aquela funcionalidade executará quando for acionada
+   - {andar: function(){
+                        comandos JS executados qdo a funcionalidade andar for acionada
+                       }
+     }
+ - Estrutura completa de um objeto será:
+   - nome-objeto {
+      propriedade: atributo,
+      funcionalidade: function(){
+
+      }
+   }
+ - Pode-se ter várias propriedades/atributos e funcionalidades/método dento de um mesmo objeto separados por vírgula, exceto no último
+
+     
