@@ -1,0 +1,15 @@
+=============================================================
+Maneiras de executar o JS
+=============================================================
+1) utilizando o recurso de console do browser
+   - no browser, pressionar F12
+   - no box Console, digitar os comandos JS e executar
+2) online no link codepen.io/pen
+3) localmente no vscode
+   - para executar somente um script diretamente a partir do index.html, basta, sem qq outro código, entre a tag script, escrever o comando JS
+    - depois é somente executar o index.html
+    - ao executar o index.html, irá abrir uma janela no browser
+    - se for um comando JS de console: console.log('Bem vindo ao starter'), o browser não exibirá nada, ficando em branco. Para ver a mensagem, terá que pressionar o F12 no browser e a mensagem aparecerá na console
+    
+
+     
