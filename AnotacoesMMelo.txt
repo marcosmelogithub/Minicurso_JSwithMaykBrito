@@ -10,6 +10,7 @@ Maneiras de executar o JS
     - depois é somente executar o index.html
     - ao executar o index.html, irá abrir uma janela no browser
     - se for um comando JS de console: console.log('Bem vindo ao starter'), o browser não exibirá nada, ficando em branco. Para ver a mensagem, terá que pressionar o F12 no browser e a mensagem aparecerá na console
+    - se for um comando JS de alerta: alert('Bem vindo ao start'), ao executar o index.html, a mensagem aparecerá numa janela externa no browser, porém não será necessário abrir a console (F12) do browser
     
 
      
