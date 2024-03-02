@@ -87,4 +87,10 @@ Objeto
    }
  - Pode-se ter várias propriedades/atributos e funcionalidades/método dento de um mesmo objeto separados por vírgula, exceto no último
 
-     
+============================================================
+Arrays ou vetores
+============================================================
+ - Estruturas com elementos em lista
+ - A declaração é:
+   - nome-array = [elemento1, elemento2, ...] ou
+   - nome-array = [], que cria um array vazio que será preenchido dinamicamente pelo JS
