@@ -5,10 +5,7 @@ Declarando variaveis
     - var nome-da-variável = valor-qualquer
     - let nome-da-variável = valor-qualquer
   - const, declara variável que não pode ter o seu conteúdo alterado
-    - const nome-da-variável = valor-qualquer, só que este valor-qualquer, no caso do const não poderá ser modificado, pois é um valor constante e se tentar em algum ponto do programa tentar alterar, dará um erro de execução
-
-    - Nas versões mais modernas do JS, para declarar variáveis, usar let e const, e meio que abandonar o var, apesar dele funcionar também, mas está caindo em desuso.
-    - Mas é importante saber do var, porque pode-se ter acesso a programas JS escritos há muito tempo e as declarações estarem ainda com var.
+    - const nome-da-variável = valor-qualquer, só que este valor-qualquer, no caso do const não poderá ser modificado, pois é um valor constante e se tentar em algum ponto do programa tentar alterar, dará um erro de execução.
 
 =========================================================
 Tipagem e não Tipagem
@@ -23,3 +20,11 @@ Tipagem e não Tipagem
   - Existem linguagens que são fortemente tipada que na declaração da variável é preciso definir qual o tipo dela (string, number, boolean. etc) e este tipo não se altera ao longo do programa e só aceitará conteúdos do tipo que ela foi declarada, caso contrário irá ocorrer um erro.
 
   - Uma falsa tipagem forte no JS são as variáveis declaradas com const, pois ao declarar, é obrigatório atribuir um valor, este valor permanecerá até o fim do programa, não podendo ser alterado e então o tipo da variável também será fixo.
+
+  ==========================================================
+  Escopo (blocos), variáveis global e variável local
+  ==========================================================
+    - variáveis criadas com var são globais e variáveis criadas com let ou const são locais, ou seja, estão dentro de um escopo.
+    - escopo, ou bloco, é tudo que está delimitado entre chaves.
+    - o que estiver dentro da tag <script></script> ou dentro de um arquivo .js está dentro do escopo geral e a partir daí podem-se criar outros escopos.
+    - se criar uma variável com var logo no inicício do escopo geral (seja diretamente na tag <script></script> ou arquivo .js), esta variável será visível e utilizada de forma global por todo js que existir, inclusive dentro dos escopos abaixo.
