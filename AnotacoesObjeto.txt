@@ -1,0 +1,21 @@
+  - Objetos, com já visto anteriormente, são estruturas que contém propriedades/atributos e/ou funcionalidades/métodos
+  - a declaração de um objeto é da seguinte forma:
+    - declarar como var, let ou const, dependendo de como este objeto será utilizado
+    - atribuir um nome para o objeto, como se dá um nome a uma variável
+    - sinal de igual "="
+    - abrir e fechar com chaves
+    - entre as chaves, fazer a declaração (não é necessário usar var, let ou const) das propriedades/atributos e/ou funcionalidades/métodos
+
+    - Exemplo de declaração de um objeto
+
+      const person = {
+        name: 'John',
+        age: 30,
+        weight: 88.6,
+        isAdmin: true
+      }
+
+      e para acessar as informações do objeto:
+        - person, acessará todo o objeto
+        - person.name, acessará o atributo da propriedade name
+        - person.age, acessará o atributo da propriedade age
