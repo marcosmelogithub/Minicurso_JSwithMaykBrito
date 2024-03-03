@@ -1,32 +1,72 @@
-// Function Constuctor ou Função Construtora
-// é um recurso para se criar objetos com propriedades e funcionalidades iguais, porém com atributos ou até mesmo métodos diferentes
+// trabalhando com array
 
-// declarar um função construtora
-function Person(nameParam){
-  this.name = nameParam;  // criou-se uma propriedade chama name com o conteúdo do parametro nameParam recebido
+// função para exibir o array no console do DevTools (F12 do Browser)
+function showArrTechs(msgParam, arrayParam){
+  console.log(`${msgParam}: ${arrayParam}`);
 }
 
-// declarando variável que irá conter o objeto construído pela função Person
-const personNumber1 = new Person('Marcos Melo');
-console.log(personNumber1);   // retorna o objeto criado
-console.log(personNumber1.name) // retorna o atributo da propriedade name do objeto
+// declara array vazio
+let arrTechs = [];
+showArrTechs('Criando array vazio',arrTechs);
 
-// declarando outra variável usando a função construtora Person com outro atributo
-const personNumber2 = new Person('Aurora Melo');
-console.log(personNumber2);
-console.log(personNumber2.name);
+// adicionar elemento ao array
+arrTechs.push('js'); // adiciona sempre no final do array
+console.log("=====================================");
+showArrTechs('Add 1o elemento ao array', arrTechs);
 
-// pode-se assim criar objetos inteiros alterando os atributos das propriedades e métodos das funcionalidades, criando uma forma dinâmica de tratar os dados.
-// o nome das funções construtoras, como uma regra tácita, sempre começam com letra maiúscula, apesar que se escrever começando com letra minúscula, ou qq caracter válido, também funciona.
+// adicionar mais elementos no final do array
+arrTechs.push('html');
+console.log("=====================================");
+showArrTechs('Add 2o elemento no fim do array', arrTechs);
+arrTechs.push('css');
+console.log("=====================================");
+showArrTechs("Add 3o elemento no fim do array", arrTechs)
+
+// adicionar elemento no início do array
+arrTechs.unshift('sql');
+console.log("=====================================");
+showArrTechs('Add elemento no início do array', arrTechs);
+
+// remover elemento do fim do array
+console.log("=====================================");
+showArrTechs("Array antes da remoção do fim", arrTechs);
+showArrTechs('Remove elemento no fim do array', arrTechs.pop());
+showArrTechs("Array após remoção do fim", arrTechs);
+
+// remover elemento do inicio do array
+console.log("=====================================");
+showArrTechs("Array antes da remoção do inicio", arrTechs);
+showArrTechs('Remove elemento no início do array', arrTechs.shift());
+showArrTechs("Array após remoção do inicio", arrTechs);
+
+// readicionar os elementos no array para continuar os exemplos
+arrTechs.push('css');
+arrTechs.push('sql');
+arrTechs.push('nodejs');
+console.log("=====================================");
+showArrTechs("Back elementos ao array", arrTechs);
+
+// obter posição do elemento no array
+console.log("=====================================");
+showArrTechs("A posição do elemento css é ", arrTechs.indexOf('css'));
+
+// obter somente alguns elementos do array
+console.log('=====================================');
+showArrTechs("Array antes da obtenção de elementos", arrTechs);
+showArrTechs('Obter 3 elementos a partir do elemento 0', arrTechs.slice(0,3));
+showArrTechs("Array após da obtenção de elementos", arrTechs);
+
+// remover 1 ou mais elementos do array
+console.log("=====================================")
+showArrTechs("Array antes da remoção de elementos", arrTechs);
+showArrTechs("Remover 2 elementos a partir do elemento 1", arrTechs.splice(1, 2));
+showArrTechs("Array após remoção de elementos",arrTechs);
 
 
-// exemplo de funções construtoras pré-existentes no JS
 
-// função construtora: String
-const myName = new String('Marcos Melo'); // montará o objeto String{'Marcos Melo'}
-console.log(myName); // exibirá o objeto criado
-console.log(myName[0]); // por ser string, pode-se acessar cada caracter como array
 
-// função construtora: Date
-const actualDate = new Date(); // cria objeto com a data e hora atuais
-console.log(actualDate); // exibe a data na console do DevTools
+
+
+
+
+
